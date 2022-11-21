@@ -1,4 +1,9 @@
 
+:root{
+    --main-color:#e84242;
+    --border:0.1rem solid rgba(255,255,255,0.4)
+}
+
 
 *{
     padding: 0;
@@ -13,10 +18,141 @@
 }
 
 
+/*! base html codes */
 
-
-
-
-.logo img{
-    height: 7rem;
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
 }
+body{
+    background-color: #e84242;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #e84242;
+    background-color: black;
+}
+
+
+/*!header sec*/
+.header .logo img{
+    height: 10rem;
+}
+.header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    margin: 2rem 7%;
+    position: sticky;
+    border-radius: 50rem;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    top:0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: black;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header.navbar .active,
+.header .navbar a:hover {
+    border-color: #e84242;
+    padding-bottom: 3px;
+}
+/*!end header sec*/
+
+/*home sect start*/
+.home{
+    min-height: 100vh;
+    background: url("/img/home.jpg")no-repeat;
+    background-size: cover;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: white;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #cccccc;
+}
+
+/*home sect end*/
+
+/*menu sect start*/
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 1.2rem;
+}
+
+.menu .box-container .box h3 {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.menu .box-container .box .price span {
+    font-size:1.5rem ;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+
+
+/*menu sect end*/
