@@ -257,4 +257,119 @@ a{
     transform: translate(-50% , -50%);
     border-radius: 3rem;
 }
+
+.products .box-container .box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.products .box-container .box-bottom .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products .box-container .box-bottom .info .price {
+    font-size: 3rem;
+}
+
+.products .box-container .box-bottom .info .amount {
+    font-size: 1.4rem;
+}
+
+.products .box-container .dark-bg .box-bottom .price,
+.products .box-container .dark-bg .box-bottom .amount {
+    color: white;
+}
+
+.products .box-container .box-bottom .product-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid #e84242;
+}
+
+.products .box-container .box-bottom .product-btn a i {
+    font-size: 1.6rem;
+    color: #e84242;
+}
 /*products sect end*/
+
+/*about us sect*/
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row img {
+    width:100% ;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: white;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #cccccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/*about us sect end*/
+
+/*review sect */
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #e84242;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+/*review sect end*/
