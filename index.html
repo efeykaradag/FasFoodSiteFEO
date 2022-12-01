@@ -17,31 +17,77 @@
         <img src="img/logo.png" alt="logo">
     </a>
     <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#" >About</a>
-        <a href="#" >Menu</a>
-        <a href="#" >Products</a>
-        <a href="#" >Review</a>
-        <a href="#" >Contact</a>
-        <a href="#" >Blogs</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#menu" >Menu</a>
+        <a href="#products" >Products</a>
+        <a href="#about" >About</a>
+        <a href="#review" >Review</a>
+        <a href="#contact" >Contact</a>
+        <a href="#blogs" >Blogs</a>
     </nav>
 
     <div class="buttons">
-        <button>
+        <button id="search-btn">
             <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
         </button>
-        <button>
+        <button id="cart-btn">
             <i class="fa-solid fa-cart-shopping"></i>
         </button>
-        <button>
+        <button id="menu-btn">
             <i class="fa-solid fa-bars"></i>
         </button>
+    </div>
+
+
+    <div class="search-form">
+        <input
+                type="text"
+                class="search-input"
+                id="search-box"
+                placeholder="search here"/>
+        <i class="fas fa-search"></i>
+    </div>
+
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="img/menu-1.png" alt="menu"></img>
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="img/menu-2.png" alt="menu"></img>
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="img/menu-3.png" alt="menu"></img>
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <i class="fas fa-times"></i>
+            <img src="img/menu-4.png" alt="menu"></img>
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
     </div>
 </header>
 <!--header sect end-->
 
 <!--home sect-->
-<section class="home">
+<section class="home" id="home">
     <div class="content">
         <h3>EXPRESS HOME DELIVERY</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aliquam architecto assumenda beatae dolorem doloremque, ducimus eligendi fugit ipsum iste iure minus nemo nesciunt numquam officia officiis quasi quos sit tempore velit veniam vitae. Asperiores assumenda corporis cumque distinctio error esse fuga magnam provident tenetur ullam. Molestias nulla, reiciendis?</p>
@@ -52,7 +98,7 @@
 <!--home sect end-->
 
 <!--menu sect start-->
-<section class="menu">
+<section class="menu" id="menu">
     <h1 class="heading">our <span>menu</span></h1>
     <div class="box-container">
         <div class="box">
@@ -105,7 +151,7 @@
 <!--menu sect end-->
 
 <!--product sect-->
-<section class="products">
+<section class="products" id="products">
     <h1 class="heading">our <span>products</span></h1>
     <div class="box-container">
         <div class="box">
@@ -175,8 +221,8 @@
 
 <!--AboutUs sect -->
 
-<section class="about">
-    <h1 class="heading">About<span>us</span></h1>
+<section class="about" id="about">
+    <h1 class="heading">About <span>us</span></h1>
     <div class="row">
         <div class="image"><img src="img/about.jpg" alt="about"></div>
         <div class="content">
@@ -193,8 +239,8 @@
 
 <!--Review sect -->
 
-<sevtion class="review">
-    <h1 class="heading">customer's<span>review</span></h1>
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
     <div class="box-container">
         <div class="box">
             <img src="img/quote.png" alt="quote">
@@ -237,27 +283,112 @@
         </div>
     </div>
 
-</sevtion>
+</section>
 
 <!--Review sect end-->
 
 <!--Contact sect -->
 
-<section class="contact">
-    <h1 class="heading">Contact<span>us</span></h1>
+<section class="contact" id="contact">
+    <h1 class="heading">Contact <span>us</span></h1>
     <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155798.0005881212!2d16.761583566278414!3d52.400445769235624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2sPoznan!5e0!3m2!1str!2spl!4v1669510572095!5m2!1str!2spl"
+        <iframe class="map"
+
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155798.0005881212!2d16.761583566278414!3d52.400445769235624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470444d2ece10ab7%3A0xa4ea31980334bfd1!2sPoznan!5e0!3m2!1str!2spl!4v1669510572095!5m2!1str!2spl"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <form>
-            <h3></h3>
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="name" />
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="E-mail" />
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-phone"></i>
+                <input type="text" placeholder="Number:" />
+            </div>
+            <input type="button" class="btn" value="contact now" />
         </form>
     </div>
 </section>
 
 <!--Contact sect end-->
 
+
+<!--Blogs sect -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">our <span>blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="img/blog-1.jpg" alt="blog" />
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">how to make burgers?</a>
+                <span>by admin/ 10st may , 2020</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt dolores ducimus ea iure nemo neque placeat quis temporibus veniam.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/blog-2.jpg" alt="blog" />
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">how to make burgers?</a>
+                <span>by admin/ 10st may , 2020</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt dolores ducimus ea iure nemo neque placeat quis temporibus veniam.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/blog-3.jpg" alt="blog" />
+            </div>
+            <div class="content">
+                <a href="#" class="tittle">how to make burgers?</a>
+                <span>by admin/ 10st may , 2020</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt dolores ducimus ea iure nemo neque placeat quis temporibus veniam.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blogs sect end-->
+
+<!--footer sect -->
+<section class="footer">
+    <div class="search">
+        <input type="text" class="search-input" placeholder="Search" />
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#" class="active">Home</a>
+        <a href="#" >About</a>
+        <a href="#" >Menu</a>
+        <a href="#" >Products</a>
+        <a href="#" >Review</a>
+        <a href="#" >Contact</a>
+        <a href="#" >Blogs</a>
+    </div>
+</section>
+<!--footer sect end-->
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
